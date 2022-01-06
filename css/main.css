@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+body { font-family: Inter, sans-serif;
+    color: #0e092e;
+    font-size: 1em;
+    line-height: 140%;}
+
+header{ display: grid; min-height: 100vh;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    grid-row-gap: 0px; height: 712px;
+        background-color: rgb(250, 247, 240);}
+header .logo { padding-top: 7vh;
+                padding-right: 2vw;
+                padding-left: 2vw; border:1px solid gold; }
+header .logo img { width: 80%; }
+.header-second { display: flex; height: 100%; justify-content: center; align-items: center; 
+                    border:1px solid orange;}
+.circle-box { display: flex;    
+            flex-flow: row wrap;  
+            grid-column-gap: 30px;
+            grid-row-gap: 30px; 
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;}
+.animation-item { border-radius: 50%; width: 130px; height: 130px;
+                overflow: hidden; 
+                transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) 
+                rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); 
+                transform-style: preserve-3d;}
+.animation-image { width: 150%;  }
+
+#navi { display: flex; flex-direction: column; 
+    justify-content: center;  border:1px solid red;  }
+.navi-item a { color: #111; font-size: 1.2em;
+    line-height: 140%; }
+.navi-item-box {display: flex; flex-direction: column;
+             padding: 30%;
+}
+.navi-item { margin-bottom: 20px;}
+.container { width: 1200px; height: auto; padding: 25vh 8vw;
+    display: flex; margin: 0 auto; border: 1px solid red; }
+.container .title { width: 50%; }
+.container .right { width: 50%;}
+h2 { margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 3em;
+    line-height: 110%;
+    font-weight: 400;
+    letter-spacing: -0.05em;}
+h3 { font-size: 1.5em;
+    line-height: 150%;
+    font-weight: lighter;
+    text-align: justify;}
+#aboutme { height: auto; background-color: rgb(206, 233, 248);}
+#aboutme .container .title div { width: 90%; height: 700px; margin-top: 100px;
+background-size: cover; background-position: center; }
+
+#work { height: 712px; background-color: thistle;}
+#collaborations { height: 712px; background-color: rgb(198, 232, 252);}
+#news { height: 712px; background-color: rgb(181, 233, 204);}
+#shop { height: 712px; background-color: rgb(241, 201, 168);}
+#contact { height: 712px; background-color: rgb(199, 195, 243);}
