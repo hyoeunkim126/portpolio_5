@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/icon" href="img/logo_s.ico">
+
+  <link href="css/reset.css" rel="stylesheet">
+  <link href="css/common.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+
+  <title>Eva Armisen</title>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+  <script>
+    $(function(){
+      var nav = $("#navi ul li");
+      var contents = $(".section>section");
+
+      nav.click(function(){
+        var index = $(this).index();
+
+        var section = contents.eq(index);
+        var offset = section.offset().top;
+
+        $("html, body").animate({scrollTop:offset},400);
+      });
+    });
+  </script>
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <a href="#" class="logo">
+        <img src="img/evaarmisen_logo.png" alt="logo">
+      </a>
+      <a href="#" class="header-second">
+        <div class="circle-box">
+          <div class="animation-item circle" >
+            <img src="img/_mg_2057.jpg" alt="" class="animation-image">
+          </div>
+          <div class="animation-item circle" >
+            <img src="img/35_0.jpg" alt="" class="animation-image">
+          </div>
+          <div class="animation-item circle" >
+            <img src="img/21.jpg" alt="" class="animation-image" >
+          </div>
+          <div class="animation-item circle" >
+            <img src="img/36.jpg" alt="" class="animation-image" >
+          </div>
+          <div class="animation-item circle" >
+            <img src="img/75.jpg" alt="" class="animation-image" >
+          </div>
+          <div class="animation-item circle" >
+            <img src="img/78.jpg" alt="" class="animation-image" >
+          </div>
+          <div class="animation-item circle" >
+            <img src="img/complices.jpg" alt="" class="animation-image" >
+          </div>
+          <div class="animation-item circle" >
+            <img src="img/img_2391.jpg" alt="" class="animation-image" >
+          </div>
+          <div class="animation-item circle" >
+            <img src="img/img_9751.jpg" alt="" class="animation-image" >
+          </div>
+        </div>
+        
+        
+      </a>
+      <div id="navi">
+        <ul class="navi-item-box">
+          <li class="navi-item"><a href="#aboutme">About me</a></li>
+          <li class="navi-item"><a href="#work">Work</a></li>
+          <li class="navi-item"><a href="#collaborations">Collaborations</a></li>
+          <li class="navi-item"><a href="#news">News</a></li>
+          <li class="navi-item"><a href="#shop">Shop</a></li>
+          <li class="navi-item"><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </header> 
+    <div class="section">
+      <section id="aboutme" class="about-me">
+        <div class="container">
+          <h2>About me</h2>
+          <div class="content-box">
+            <div class="title left">
+                
+                <h3>Eva Armisén (Zaragoza,1969)</h3>
+                <h2 class="sticky-text" >
+                    Her work focuses on capturing daily life and everydayness as something
+                    extraordinary, proposes a vital and optimistic look that takes us to 
+                    a livable world full of emotion.
+                   <br><br>
+                </h2>
+            </div>
+                
+            <div class="right">
+                <img src="img/title-biografia-en.png" style="width: 200px; margin-top: 50px;">
+                <h3>She got her degree in Fine Arts from the University of Barcelona,
+                completed her training at the Rietveld Akademie in Amsterdam and got 
+                a grant from the Joan and Pilar Miró Foundation in Palma de Mallorca.
+                <br><br>
+
+                She lives and works in Barcelona.</h3>
+                <br><br>
+                <div style="background-image: url('img/img_about.jpg');"></div>
+                <div style="background-image: url('img/evaarmisen_photo.png');"></div>
+                
+                <h3>
+                Painting and engraving are her most common means, 
+                but the originality and ability to communicate in her work has
+                led Armisén to collaborate on a wide variety of projects such
+                as public art installations, advertising, film and television
+                    campaigns or editorial projects.
+                <br><br>
+                With an increasingly international trajectory we can see her 
+                work exhibited in cities such as Seoul, Los Angeles, 
+                Hong Kong Singapore, Lisbon, Taipei, Shanghai or Melbourne, 
+                both in art fairs and individual exhibitions.
+                <br><br>
+                In 2016, she collaborated in the candidacy of the "Haenyeo" 
+                (diving women of the island of Jeju) to Intangible Heritage 
+                of Humanity and in June of 2017 she illustrated the book Mom
+                is a Haenyeo where the incredible history of these women is 
+                explained.<br><br></h3>
+            </div>
+          </div>
+          
+        </div>
+        
+      </section>
+      <section id="work">
+        <div class="container">
+          <div class="title">
+            <h2>Work</h2>
+          </div>
+        </div>
+        
+      </section>
+      <section id="collaborations">
+        <div class="container">
+          <div class="title">
+            <h2>Collaborations</h2>
+          </div>
+        </div>
+        
+      </section>
+      <section id="news">
+        <div class="container">
+          <div class="title">
+            <h2>News</h2>
+          </div>
+        </div>
+        
+      </section>
+      <section id="shop">
+        <div class="container">
+          <div class="title">
+            <h2>Shop</h2>
+          </div>
+        </div>
+        
+      </section>
+      <section id="contact">
+        <div class="container">
+          <div class="title">
+            <h2>Contact</h2>
+          </div>
+        </div>
+        
+      </section>
+    </div>
+    
+  </div>
+  
+  
+</body>
+</html>
