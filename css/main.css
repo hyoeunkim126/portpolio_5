@@ -66,7 +66,7 @@ h4 { font-size: 1.2em;
     font-weight: lighter;
     text-align: justify; }
 
-    .content-box { display: flex; }
+.content-box { display: flex; }
 /* about me */
 #aboutme { height: auto; background-color: rgb(240, 219, 213);}
 .sticky-text { width: 80%; 
@@ -79,13 +79,25 @@ h4 { font-size: 1.2em;
             line-height: 120%;
             font-weight: 300;}
 
-.sub-title { font-weight: 400;}
+.sub-title { font-weight: bold; padding-bottom: 5vh;}
 #aboutme .right div { width: 100%; height: 800px; 
     background-size: cover;
     background-position:center;
     margin-top: 100px; }
 
-#work { height: 712px; background-color: thistle;}
+/* work */
+#work { height: auto; background-color: thistle;}
+#work .content-box { flex-flow: row wrap; 
+                     justify-content: space-between; padding-top: 25vh;}
+#work .content-box .work-gallery { width: 30%; height: auto; 
+                         }
+                        
+.gallery-photo { width: 100%; height: 320px; 
+    background-size: cover; background-position: top;}
+.work-gallery h4 { font-size: 1.2em; padding-top: 2vh;}
+.work-gallery span { display: block;} 
+.work-gallery span:last-child { margin-bottom: 5vh;} 
+
 #collaborations { height: 712px; background-color: rgb(198, 232, 252);}
 #news { height: 712px; background-color: rgb(181, 233, 204);}
 #shop { height: 712px; background-color: rgb(241, 201, 168);}
