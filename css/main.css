@@ -5,19 +5,26 @@ body { font-family: Inter, sans-serif;
     font-size: 1em;
     line-height: 140%;}
 
-header{ display: grid; min-height: 100vh;
+header{ position: relative;
+    display: grid;
+    min-height: 100vh;
+    padding: 0vh 0vw;
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
-    grid-row-gap: 0px; height: 712px;
+    grid-row-gap: 0px;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
         background-color: rgb(250, 247, 240);}
-header .logo { padding-top: 7vh;
+.header-first { padding-top: 7vh; }
+header .logo { 
                 padding-right: 3vw;
                 padding-left: 3vw;  }
-header .logo img { width: 80%; }
+header .logo img { max-width: 80%; }
 .header-second { display: flex; height: 100%; 
                 justify-content: center; align-items: center; }
-.circle-box { display: flex;    
-            flex-flow: row wrap;  
+.circle-box { display: grid;    
             grid-column-gap: 30px;
             grid-row-gap: 30px; 
             grid-template-rows: 1fr 1fr 1fr;
