@@ -5,16 +5,14 @@ body { font-family: Inter, sans-serif;
     font-size: 1em;
     line-height: 140%;}
 
-header{ position: relative;
+header { 
     display: grid;
     min-height: 100vh;
     padding: 0vh 0vw;
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
     grid-row-gap: 0px;
-    -ms-grid-columns: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    -ms-grid-rows: auto;
     grid-template-rows: auto;
         background-color: rgb(250, 247, 240);}
 .header-first { padding-top: 7vh; }
