@@ -4,7 +4,7 @@ body { font-family: Inter, sans-serif;
     color: #0e092e;
     font-size: 1em;
     line-height: 140%;}
-
+#wrap { height: auto;}
 header { 
     display: grid;
     min-height: 100vh;
@@ -86,7 +86,7 @@ h4 { font-size: 1.2em;
     margin-top: 100px; }
 
 /* work */
-#work { height: auto; background-color: thistle;}
+#work { height: auto; background-color: rgb(250, 247, 240);}
 #work .content-box { flex-flow: row wrap; 
                      justify-content: space-between; padding-top: 25vh;}
 #work .content-box .work-gallery { width: 30%; height: auto; 
@@ -98,7 +98,30 @@ h4 { font-size: 1.2em;
 .work-gallery span { display: block;} 
 .work-gallery span:last-child { margin-bottom: 5vh;} 
 
-#collaborations { height: 712px; background-color: rgb(198, 232, 252);}
-#news { height: 712px; background-color: rgb(181, 233, 204);}
+/* collaborations */
+#collaborations { height: auto; background-color: rgb(198, 232, 252);}
+#collaborations .container .left { width: 50%;}
+#collaborations .container h2 { 
+    position: sticky; top: 20vh; margin-bottom: 15vh;}
+#collaborations .container .left  { display: flex;
+                                    align-items: flex-end; }
+.collabo-text { width: 70%; font-size: 1.5em; font-weight: lighter;
+                line-height: 140%; padding-top: 5vh;}
+#collaborations .right { width: 50%; display: flex; flex-flow: row wrap; 
+                        justify-content: space-between; grid-row-gap: 7vh;
+                        margin-top: -15vh; }
+#collaborations .right a { width: 45%; 
+}
+#collaborations .right .gallery-photo { width: 100%; height: 200px; 
+    background-size: cover; background-position: top;
+    opacity: 0.5;
+    transition: opacity 300ms ease; }
+#collaborations .right .gallery-photo:hover { opacity: 1;}
+
+
+/* news */
+#news { height: auto; background-color: rgb(181, 233, 204);}
+#news .container .left { width: 20%;}
+#news .container .right { width: 80%;}
 #shop { height: 712px; background-color: rgb(241, 201, 168);}
-#contact { height: 712px; background-color: rgb(199, 195, 243);}
+#contact { height: 712px; background-color: rgb(226, 226, 226);}
