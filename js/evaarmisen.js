@@ -20,9 +20,15 @@ $(function(){
      ws = $(this).scrollTop();
 
      if(ws > 700) {
-      $("header").css('background-color', 'rgb(240, 219, 213)'); //pink색상
+      $('header').css('background-color', 'rgb(240, 219, 213)'); //pink색상
       } else {
-          $("header").css('background-color', 'rgb(250, 247, 240)'); //ivory색상
+          $('header').css('background-color', 'rgb(250, 247, 240)'); //ivory색상
       }
+      var s1=$('.about-me').offset().top;
+      if(ws < s1-200){
+        $('.about-me').css('background-color', 'rgb(240, 219, 213)'); //pink색상
+      }else {
+        $('.about-me').css('background-color', 'rgb(250, 247, 240)'); //ivory색상
+    }
   });
 });
