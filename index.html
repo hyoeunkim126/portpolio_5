@@ -12,21 +12,8 @@
 
   <title>Eva Armisen</title>
   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
-  <script>
-    $(function(){
-      var nav = $("#navi ul li");
-      var contents = $(".section>section");
-
-      nav.click(function(){
-        var index = $(this).index();
-
-        var section = contents.eq(index);
-        var offset = section.offset().top;
-
-        $("html, body").animate({scrollTop:offset},400);
-      });
-    });
-  </script>
+  <script src="js/evaarmisen.js"></script>
+ 
 </head>
 <body>
   <div id="wrap">
@@ -82,7 +69,7 @@
     <div class="section">
       <section id="aboutme" class="about-me">
         <div class="container">
-          <h2>About me</h2>
+          <h2 class="s1">About me</h2>
           <div class="content-box">
             <div class="title left">
                 <h2 class="sticky-text" >
@@ -131,7 +118,7 @@
       </section>
       <section id="work">
         <div class="container">
-          <h2>Work</h2>
+          <h2 class="s2">Work</h2>
           <div class="content-box">
             <div class="work-gallery">
               <a href="#"><div class="gallery-photo" style="background-image: url('img/img_9751.jpg');"></div>              
@@ -184,7 +171,7 @@
       </section>
       <section id="collaborations">
         <div class="container">
-          <h2>Collaborations</h2>
+          <h2 class="s3">Collaborations</h2>
           
           <div class="content-box">
             <div class="title left">
