@@ -13,25 +13,38 @@ $(function(){
     $("html, body").animate({scrollTop:offset},400);
   });
 });
+
 // 원 호버시 이미지틀 작아짐
+
 $(function(){
     $('.animation-item').hover(
       function(){
-        $(this).css('transform', 'scale(0.8, 0.8)');
-        $(this).find("img").css('transform', 'scale(1.2, 1.2)');
+        $(this).css('transform', 'scale(0.7, 0.7)');
+        $(this).find("img").css('transform', 'scale(1.3, 1.3)');
       },
       function(){
         $(this).css('transform', 'scale(1, 1)');
         $(this).find("img").css('transform', 'scale(1, 1)');
       }
     );
-    
-    
-
 });
+
+// 메뉴 호버
+
+// $(function(){
+//   $('.nav-item-box li a').hover(
+//     function(){
+//       $(this).css('transform', 'scaleX(1)');
+//     },
+//     function(){
+//       $(this).css('transform', 'scale(0)');
+//     }
+//   );
+// });
 
 
 // 페이지이동하면서 배경화면색 변함
+
 $(function(){
   var ws = 0;
   $(window).scroll(function(){
