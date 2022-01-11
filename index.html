@@ -124,49 +124,77 @@
           <h2 class="s2">Work</h2>
           <div class="content-box">
             <div class="work-gallery">
-              <a href="#"><div class="gallery-photo" style="background-image: url('img/img_9751.jpg');"></div>              
-              </a>
-              <h4>Mirar</h4>
-              <span>Looking</span>
-              <span>2020</span>
-            </div>
-            <div class="work-gallery">
-              <a href="#"><div class="gallery-photo" style="background-image: url('img/img_9750.jpg');"></div>
-              </a>
+              <div class="work-img-hover">
+                <a href="#"><div class="gallery-photo" style="background-image: url('img/img_9751.jpg');"></div>              
+                </a>
+              </div>
+              <div class="work-title-box">
+                <h4>Mirar</h4>
+                <span>Looking</span>
+                <span>2020</span>
+              </div>
               
-              <h4>Confiar</h4>
-              <span>To trust</span>
-              <span>2020</span>
             </div>
             <div class="work-gallery">
-              <a href="#"><div class="gallery-photo" style="background-image: url('img/img_9749.jpg');"></div>
-              </a>
-              <h4>Luz</h4>
-              <span>Light</span>
-              <span>2018</span>
+              <div class="work-img-hover">
+                <a href="#"><div class="gallery-photo" style="background-image: url('img/img_9750.jpg');"></div>
+                </a>
+              </div>
+              <div class="work-title-box">
+                <h4>Confiar</h4>
+                <span>To trust</span>
+                <span>2020</span>
+              </div>
             </div>
             <div class="work-gallery">
-              <a href="#"><div class="gallery-photo" style="background-image: url('img/complices.jpg');"></div>
-              </a>
-              <h4>Cómplices</h4>
-              <span>Partners</span>
-              <span>2020</span>
-            </div>
-            <div class="work-gallery">
-              <a href="#"><div class="gallery-photo" style="background-image: url('img/img_9748.jpg');"></div>
-              </a>
+              <div class="work-img-hover">
+                <a href="#"><div class="gallery-photo" style="background-image: url('img/img_9749.jpg');"></div>
+                </a>
+              </div>
+              <div class="work-title-box">
+                <h4>Luz</h4>
+                <span>Light</span>
+                <span>2018</span>
+              </div>
               
-              <h4>Comiendo</h4>
-              <span>Eating</span>
-              <span>2019</span>
             </div>
             <div class="work-gallery">
-              <a href="#"><div class="gallery-photo" style="background-image: url('img/78.jpg');"></div>
-              </a>
+              <div class="work-img-hover">
+                <a href="#"><div class="gallery-photo" style="background-image: url('img/complices.jpg');"></div>
+                </a>
+              </div>
+              <div class="work-title-box">
+                <h4>Cómplices</h4>
+                <span>Partners</span>
+                <span>2020</span>
+              </div>
               
-              <h4>Verdad</h4>
-              <span>Truth</span>
-              <span>2018</span>
+            </div>
+            <div class="work-gallery">
+              <div class="work-img-hover">
+                <a href="#"><div class="gallery-photo" style="background-image: url('img/img_9748.jpg');"></div>
+                </a>
+              </div>
+              <div class="work-title-box">
+                <h4>Comiendo</h4>
+                <span>Eating</span>
+                <span>2019</span>
+              </div>
+              
+              
+            </div>
+            <div class="work-gallery">
+              <div class="work-img-hover">
+                <a href="#"><div class="gallery-photo" style="background-image: url('img/78.jpg');"></div>
+                </a>
+              </div>
+              <div class="work-title-box">
+                <h4>Verdad</h4>
+                <span>Truth</span>
+                <span>2018</span>
+              </div>
+              
+              
             </div>
           </div>
         </div>
@@ -274,18 +302,53 @@
       <section id="shop" class="shop">
         <div class="container">
           <h2>Shop</h2>
-          <div class="title">
+          <div class="content-box">
+            <div class="left">
+              <a href="#"><div class="shop-photo" style="background-image: url('img/quemeestapasando-cara.jpg');"></div>
+              </a>
+              <a href="#"><div class="shop-photo" style="background-image: url('img/tengo-un-papel-libro-portada.jpg');"></div>
+              </a>
+              <a href="#"><div class="shop-photo" style="background-image: url('img/img_0492_3.jpg');"></div>
+              </a>
+              <a href="#"><div class="shop-photo" style="background-image: url('img/portada_com_antes_de_todo_def.jpg');"></div>
+              </a>
+              <a href="#"><div class="shop-photo" style="background-image: url('img/evasions.jpg');"></div>
+              </a>
+              <a href="#"><div class="shop-photo" style="background-image: url('img/evasiones1.jpg');"></div>
+              </a>
+            </div>
+            <div class="right">
 
+            </div>
           </div>
+          
         </div>
         
       </section>
-      <section id="contact">
+      <section id="contact" class="contact">
         <div class="container">
           <h2>Contact</h2>
-          <div class="title">
+          <div class="contact-box">
+            <form class="contact-form">
+              <div>
+                <label for="name">Name</label>
+                <input type="text" class="text-field" maxlength="256" data-name="Name"
+                name="name" placeholder="name">
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input type="email" class="text-field" maxlength="256" data-name="Email"
+                name="email" placeholder="email" required>
+              </div>
+              <div>
+                <label for="Message">Message</label>
+                <textarea name="Message" maxlength="5000" id="message" data-name="Message"></textarea>
+              </div>
+              <input type="submit" value="Send" data-wait="Please wait..." class="button">
+            </form>
             
           </div>
+          
         </div>
         
       </section>

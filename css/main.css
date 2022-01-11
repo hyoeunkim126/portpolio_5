@@ -22,19 +22,21 @@ header .logo img { max-width: 80%; }
 .header-second { display: flex; height: 100%; 
                  justify-content: center; align-items: center; }
 .circle-box { display: grid;    
-                grid-column-gap: 30px;
-                grid-row-gap: 30px; 
+                grid-column-gap: 25px;
+                grid-row-gap: 25px; 
                 grid-template-rows: 1fr 1fr 1fr;
                 grid-template-columns: 1fr 1fr 1fr;}
 .animation-item {border-radius: 50%; 
-                width: 130px; height: 130px;
-                overflow: hidden; transition: all 0.5s ease-in-out;}
+                width: 140px; height: 140px;
+                overflow: hidden; 
+                transition: all 0.5s ease-in-out;}
 .animation-image { max-width: 140%; 
                 transition: all 0.5s ease-in-out; }
 
+/* 네비게이션 */
 #navi { display: flex; flex-direction: column; 
        justify-content: center;    }
-.navi-item a { color: #111; font-size: 1.2em;
+.navi-item a { color: #111; font-size: 1.3em;
                line-height: 140%;  }
 .navi-item a:after{content:"";
                     display:block;
@@ -45,7 +47,8 @@ header .logo img { max-width: 80%; }
                     transform-origin:right;
                     transition:transform 0.3s ease-out; }
 .navi-item a:hover:after { transform:scaleX(1);
-	                       transform-origin:left; }       
+	                       transform-origin:left; } 
+.navi-item a:hover { color: #046bb6; }      
 .navi-item-box {display: flex; flex-direction: column;
                 padding: 30%; }
 .navi-item { margin-bottom: 20px;}
@@ -82,7 +85,7 @@ h4 { font-size: 1.2em;
 .sticky-text { width: 80%; 
             margin-top: 600px;
             position: sticky;
-            top: 10px;
+            top: 10vh;
             font-size: 3em;
             line-height: 110%;
             letter-spacing: 0.1em;
@@ -100,13 +103,18 @@ h4 { font-size: 1.2em;
 #work .content-box { flex-flow: row wrap; 
                      justify-content: space-between; padding-top: 25vh;}
 #work .content-box .work-gallery { width: 30%; height: auto; 
-                         }
-                        
-.gallery-photo { width: 100%; height: 320px; 
-    background-size: cover; background-position: top;}
+    overflow: hidden;}
+.work-gallery .work-img-hover { height: 320px; overflow: hidden; 
+    transition: all 0.5s ease-in-out;}                        
+.gallery-photo { width: 100%; height: 350px; 
+    background-size: cover; background-position: top;
+    transition: all 0.5s ease-in-out; }
+.work-title-box { padding-top: 1vh; 
+                  padding-left: 3vh;}
 .work-gallery h4 { font-size: 1.2em; padding-top: 2vh;}
-.work-gallery span { display: block;} 
+.work-gallery span { display: block; color: rgb(122, 122, 122);} 
 .work-gallery span:last-child { margin-bottom: 5vh;} 
+
 
 /* collaborations */
 #collaborations { height: auto; background-color: rgb(240, 219, 213);}
@@ -130,10 +138,10 @@ h4 { font-size: 1.2em;
 
 /* news */
 #news { height: auto; background-color: rgb(240, 219, 213);}
-#news .container h2 { position: sticky; top:10px; }
+#news .container h2 { position: sticky; top:20vh; }
 #news .container .left { width: 30%; height: 500px;}
 #news .container .right { width: 70%; height: 100%; }
-.news-box { margin-bottom: 10vh;
+.news-box { margin-bottom: 8vh;
              border: 1px solid rgb(221, 198, 191);}
 .news-box .news-photo { width: 100%; background-color: gold;
                         height: 400px; 
@@ -147,5 +155,67 @@ h4 { font-size: 1.2em;
                     line-height: 130%;
                     font-weight: lighter;}
 
-#shop { height: 712px; background-color: rgb(240, 219, 213);}
-#contact { height: 712px; background-color: rgb(240, 219, 213);}
+/* shop */
+#shop { height: auto; background-color: rgb(240, 219, 213);}
+.shop .container h2 { margin-bottom: 10vh;}
+.shop .left { width: 50%; height: 100%;
+     display: flex; flex-flow: row wrap; 
+     justify-content: space-between; grid-row-gap: 7vh;}
+.shop .left a { width: 45%;}
+.shop .right { width: 50%;}
+.shop .shop-photo { width: 100%; height: 350px; 
+                    background-size: cover; background-position: center;}
+
+#contact { height: auto; background-color: rgb(240, 219, 213);}
+.contact h2 { margin-bottom: 10vh; }
+.contact .contact-box { max-width: 50%; height: auto; 
+                        margin: 0 auto; padding: 8vh 6vw;
+                        border-radius: 2px;
+                        background-color: #fff;
+                        box-shadow: 0 20px 40px -25px rgb(0 0 0 / 25%);}
+.contact-form {display: flex; 
+    flex-direction: column ;}  
+    
+label { display: block;
+    margin-bottom: 10px;
+    color: #5e8e84;
+    font-size: 1.2em;
+    font-weight: 500;}   
+.text-field { display: block;
+    min-height: 45px;
+    margin-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 1em;
+    border-style: solid;
+    border-width: 1px;
+    border-color: transparent transparent #f0dbd5;
+    border-radius: 2px;
+    background-color: #faf7f0;
+    transition: background-color 200ms ease;
+    font-size: 1em;
+    line-height: 140%;} 
+.text-field:hover { background-color: #eef2ff; }
+#message { display: block; height: auto;
+    width: 100%;
+    min-height: 135px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: transparent transparent #f0dbd5;
+    border-radius: 2px;
+    background-color: #faf7f0;
+    margin-bottom: 20px;
+}    
+.button { display: block;
+        height: 45px;
+        padding: 0px 30px;
+        border-radius: 2px;
+        border : 0;
+        background-color: #2048cc;
+        transition: color 200ms ease, 
+                    background-color 200ms ease;
+        color: #fff;
+        font-size: 1.2em;
+        line-height: 50px;
+        cursor: pointer;}                   

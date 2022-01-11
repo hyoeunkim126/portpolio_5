@@ -29,25 +29,25 @@ $(function(){
     );
 });
 
-// 메뉴 호버
+// work img 호버시
 
-// $(function(){
-//   $('.nav-item-box li a').hover(
-//     function(){
-//       $(this).css('transform', 'scaleX(1)');
-//     },
-//     function(){
-//       $(this).css('transform', 'scale(0)');
-//     }
-//   );
-// });
+$(function(){
+  $('.work .gallery-photo').hover(
+    function(){
+      $(this).css('transform', 'scale(1.2)');
+    },
+    function(){
+      $(this).css('transform', 'scale(1)');
+    }
+  );
+});
 
 
 // 페이지이동하면서 배경화면색 변함
 
 $(function(){
   var ws = 0;
-  $(window).scroll(function(){
+  $(document).scroll(function(){
      ws = $(this).scrollTop();
 
      if(ws > 700) {
@@ -92,8 +92,8 @@ $(function(){
                   .css('opacity', '0.5');
       }
       // news
-      var s3=$('.news').offset().top;
-      if(ws < s3-400){
+      var s4=$('.news').offset().top;
+      if(ws < s4-400){
         $('.news').css('background-color', 'rgb(240, 219, 213)') //pink색상
                   .css('opacity', '0.5');
       }else {
@@ -103,15 +103,27 @@ $(function(){
                             .css('opacity', '0.5');
       }
       // shop
-      var s3=$('.shop').offset().top;
-      if(ws < s3-400){
+      var s5=$('.shop').offset().top;
+      if(ws < s5-400){
         $('.shop').css('background-color', 'rgb(240, 219, 213)') //pink색상
                   .css('opacity', '0.5');
       }else {
         $('.shop').css('background-color', 'rgb(250, 247, 240)') //ivory색상
                   .css('opacity', '1');
         $('.news').css('background-color', 'rgb(240, 219, 213)') //pink색상
-                            .css('opacity', '0.5');
+                   .css('opacity', '0.5');
+      }
+
+      // contact
+      var s6=$('.contact').offset().top;
+      if(ws < s6-400){
+        $('.contact').css('background-color', 'rgb(240, 219, 213)') //pink색상
+                     .css('opacity', '0.5');
+      }else {
+        $('.contact').css('background-color', 'rgb(250, 247, 240)') //ivory색상
+                  .css('opacity', '1');
+        $('.shop').css('background-color', 'rgb(240, 219, 213)') //pink색상
+                   .css('opacity', '0.5');
       }
   });
 });
