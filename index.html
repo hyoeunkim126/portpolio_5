@@ -13,12 +13,27 @@
   <title>Eva Armisen</title>
   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
   <script src="js/evaarmisen.js"></script>
-  <style>
+  
+    <style>
+      .popup { height:auto; 
+               display:none; background-color: rgba(51, 51, 51, 0.6); 
+               box-shadow:0px 1px 1px #333; 
+               width:260px; z-index:100; position:absolute;  
+               top:0; left:0; width: 100%; height: 100%; }
+      .popup a.close{float:right; padding-right:8px; color:#FFF; font-family:verdana}
 
-  </style>
+    </style>
  
 </head>
 <body>
+  <div class="popup">
+    <img src="img/img-5795.jpg"><a href="#" class="close" onClick="javascript:popupOpen()">X</a>
+    <h3>Mom is a Haenyeo</h3>
+    <p>A story about the “Hanyeo” diver women that live in Jeju Island, South Korea. It represents profound values for the artist: independence, pride for their work and a strong sense of community. After a Japanese invasion, the island was left with barely any men, and women developed a diving technique, which depended only on their pulmonary capacity. These women have been the biggest input to the island’s economy, and it is a dying art.  Hanyeos had been up to 25000 in the past but nowadays there’s only 4000 left, and their average age is 72 years old.
+
+      This book tells the story of three generations of divers; grandmother, mother and daughter, through them exposes the Haenyeos way of understanding life and their respect for the sea. 
+     
+     After it's 13th edition in Korea, "Mom is a Haenyeo" is now being translated to Japanese and  Spanish and Catalan by Santi Balmes.</p></div>
   <div id="wrap">
     <header>
       <div class="header-first">
@@ -208,9 +223,16 @@
             <div class="title left">
               <p class="collabo-text">Artistic collaborations with the work of Eva Armisén as protagonist.</p>
             </div>
+            
             <div class="right">
-              <a href="#"><div class="gallery-photo" style="background-image: url('img/img-5795.jpg');"></div>
-              </a>
+              <a href="#"><div class="gallery-photo" style="background-image: url('img/img-5795.jpg');">
+                </div></a>
+                
+            
+              
+
+              
+              
               <a href="#"><div class="gallery-photo" style="background-image: url('img/20140214185515l.jpg');"></div>
               </a>
               <a href="#"><div class="gallery-photo" style="background-image: url('img/20141013173226l.jpg');"></div>
@@ -304,7 +326,12 @@
           <h2>Shop</h2>
           <div class="content-box">
             <div class="left">
-              <a href="#"><div class="shop-photo" style="background-image: url('img/quemeestapasando-cara.jpg');"></div>
+              <a href="#" class="shop-photo-box">
+                <div class="shop-photo" style="background-image: url('img/quemeestapasando-cara.jpg');">
+                </div>
+                <div class="book-info">
+                  
+                </div>
               </a>
               <a href="#"><div class="shop-photo" style="background-image: url('img/tengo-un-papel-libro-portada.jpg');"></div>
               </a>
@@ -318,7 +345,12 @@
               </a>
             </div>
             <div class="right">
-
+              <div class="shop-text-box">
+                  <h3>“Com abans de tot / <br>Como antes de todo”</h3>
+                  <p>Texts Eva Piquer &amp; Illustrations Eva Armisén<br>
+                     Published by Bridge. <br>Catalan, Spanish and Korean.</p>
+                <a href="#" class="button">Books ></a>
+              </div>
             </div>
           </div>
           
@@ -333,12 +365,12 @@
               <div>
                 <label for="name">Name</label>
                 <input type="text" class="text-field" maxlength="256" data-name="Name"
-                name="name" placeholder="name">
+                name="name" >
               </div>
               <div>
                 <label for="email">Email</label>
                 <input type="email" class="text-field" maxlength="256" data-name="Email"
-                name="email" placeholder="email" required>
+                name="email" required>
               </div>
               <div>
                 <label for="Message">Message</label>

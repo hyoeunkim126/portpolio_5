@@ -33,7 +33,7 @@ header .logo img { max-width: 80%; }
 .animation-image { max-width: 140%; 
                 transition: all 0.5s ease-in-out; }
 
-/* 네비게이션 */
+    /* 네비게이션 */
 #navi { display: flex; flex-direction: column; 
        justify-content: center;    }
 .navi-item a { color: #111; font-size: 1.3em;
@@ -53,7 +53,7 @@ header .logo img { max-width: 80%; }
                 padding: 30%; }
 .navi-item { margin-bottom: 20px;}
 
-/* section 공통 */
+    /* section 공통 */
 .container { width: 1200px; height: auto; padding: 25vh 0vw;
             margin: 0 auto;  }
 .container .title { width: 60%; }
@@ -78,7 +78,7 @@ h4 { font-size: 1.2em;
 
 .content-box { display: flex; }
 
-/* about me */
+    /* about me */
 #aboutme { height: auto; 
             background-color: rgb(240, 219, 213);
             opacity: 0.5;}
@@ -98,7 +98,7 @@ h4 { font-size: 1.2em;
     background-position:center;
     margin-top: 100px; }
 
-/* work */
+    /* work */
 #work { height: auto; background-color: rgb(240, 219, 213); opacity: 0.5;}
 #work .content-box { flex-flow: row wrap; 
                      justify-content: space-between; padding-top: 25vh;}
@@ -116,7 +116,7 @@ h4 { font-size: 1.2em;
 .work-gallery span:last-child { margin-bottom: 5vh;} 
 
 
-/* collaborations */
+    /* collaborations */
 #collaborations { height: auto; background-color: rgb(240, 219, 213);}
 #collaborations .container .left { width: 50%;}
 #collaborations .container h2 { 
@@ -136,7 +136,7 @@ h4 { font-size: 1.2em;
 #collaborations .right .gallery-photo:hover { opacity: 1;}
 
 
-/* news */
+    /* news */
 #news { height: auto; background-color: rgb(240, 219, 213);}
 #news .container h2 { position: sticky; top:20vh; }
 #news .container .left { width: 30%; height: 500px;}
@@ -155,17 +155,32 @@ h4 { font-size: 1.2em;
                     line-height: 130%;
                     font-weight: lighter;}
 
-/* shop */
+    /* shop */
 #shop { height: auto; background-color: rgb(240, 219, 213);}
 .shop .container h2 { margin-bottom: 10vh;}
+.shop .content-box { justify-content: space-between;}
 .shop .left { width: 50%; height: 100%;
      display: flex; flex-flow: row wrap; 
      justify-content: space-between; grid-row-gap: 7vh;}
 .shop .left a { width: 45%;}
-.shop .right { width: 50%;}
+.shop .shop-photo-box { overflow: hidden;
+    transition: all 0.5s ease-in-out;}
 .shop .shop-photo { width: 100%; height: 350px; 
-                    background-size: cover; background-position: center;}
+                    background-size: cover; 
+                    background-position: center;
+                    transition: all 0.5s ease-in-out;}
+.shop .right { width: 40%;}
+.shop .right .shop-text-box { position: sticky;
+                              top: 20vh; margin-top: 0;} 
+.shop-text-box p { font-size: 1.2em; 
+                line-height: 140%;
+                margin-top: 5vh;
+                color: #666; }
+.shop .right .shop-text-box .button { display: inline-block;
+                                      margin-top: 20px;}
 
+
+     /* contact */
 #contact { height: auto; background-color: rgb(240, 219, 213);}
 .contact h2 { margin-bottom: 10vh; }
 .contact .contact-box { max-width: 50%; height: auto; 
@@ -174,14 +189,15 @@ h4 { font-size: 1.2em;
                         background-color: #fff;
                         box-shadow: 0 20px 40px -25px rgb(0 0 0 / 25%);}
 .contact-form {display: flex; 
-    flex-direction: column ;}  
+            flex-direction: column ;}  
     
 label { display: block;
     margin-bottom: 10px;
-    color: #5e8e84;
+    color: #666;
     font-size: 1.2em;
     font-weight: 500;}   
 .text-field { display: block;
+    width: 100%;
     min-height: 45px;
     margin-bottom: 20px;
     padding-right: 20px;
@@ -207,7 +223,7 @@ label { display: block;
     background-color: #faf7f0;
     margin-bottom: 20px;
 }    
-.button { display: block;
+.button { display: inline;
         height: 45px;
         padding: 0px 30px;
         border-radius: 2px;
@@ -218,4 +234,8 @@ label { display: block;
         color: #fff;
         font-size: 1.2em;
         line-height: 50px;
-        cursor: pointer;}                   
+        cursor: pointer;
+        }                   
+
+.popup { display: none;
+         width: 100%; padding: 50px; background-color: rgba(17, 17, 17, 0.603);}

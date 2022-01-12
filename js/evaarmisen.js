@@ -127,3 +127,33 @@ $(function(){
       }
   });
 });
+
+
+// #shop hover
+
+$(function(){
+  $('.shop-photo-box').hover(
+    function(){
+      $(this).css('transform', 'scale(0.9, 0.9)');
+      $(this).find(".shop-photo").css('transform', 'scale(1.2, 1.2)');
+    },
+    function(){
+      $(this).css('transform', 'scale(1, 1)');
+      $(this).find(".shop-photo").css('transform', 'scale(1, 1)');
+    }
+  );
+});
+
+
+
+$(function(){
+  $('.gallery-photo').click(function(){
+    $('.popup').css('display', 'block');
+  });
+
+  $('.close').click(function(){
+    $('.popup').css('display', 'none');
+  });
+});
+
+
