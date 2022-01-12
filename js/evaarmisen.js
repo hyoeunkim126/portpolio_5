@@ -148,7 +148,7 @@ $(function(){
 
 $(function(){
   $('.gallery-photo').click(function(){
-    $('.popup').css('display', 'block');
+    $('.popup').css('display', 'block').css('opacity', '1');
   });
 
   $('.close').click(function(){

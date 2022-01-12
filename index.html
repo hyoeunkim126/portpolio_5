@@ -13,27 +13,25 @@
   <title>Eva Armisen</title>
   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
   <script src="js/evaarmisen.js"></script>
+  <script src="js/popup.js"></script>
   
     <style>
-      .popup { height:auto; 
-               display:none; background-color: rgba(51, 51, 51, 0.6); 
-               box-shadow:0px 1px 1px #333; 
-               width:260px; z-index:100; position:absolute;  
-               top:0; left:0; width: 100%; height: 100%; }
-      .popup a.close{float:right; padding-right:8px; color:#FFF; font-family:verdana}
+      .popup { display:none; background-color: rgba(255, 255, 255); 
+               top:0; left:0; bottom: 0; right: 0; opacity: 1;
+               position: fixed; }
+
+      .popup .popup-container { 
+              top: 0; left: 0; bottom: 0; right: 0;
+              width: 450px; height: 300px; margin: 0 auto; background-color: #fff;}
+      .popup-container img { margin:32px auto 0 auto;
+              width:400px; height:auto;}
+      .popup a.close{float:right; padding-right:8px; color:rgb(0, 0, 0); font-family:verdana}
 
     </style>
  
 </head>
 <body>
-  <div class="popup">
-    <img src="img/img-5795.jpg"><a href="#" class="close" onClick="javascript:popupOpen()">X</a>
-    <h3>Mom is a Haenyeo</h3>
-    <p>A story about the “Hanyeo” diver women that live in Jeju Island, South Korea. It represents profound values for the artist: independence, pride for their work and a strong sense of community. After a Japanese invasion, the island was left with barely any men, and women developed a diving technique, which depended only on their pulmonary capacity. These women have been the biggest input to the island’s economy, and it is a dying art.  Hanyeos had been up to 25000 in the past but nowadays there’s only 4000 left, and their average age is 72 years old.
-
-      This book tells the story of three generations of divers; grandmother, mother and daughter, through them exposes the Haenyeos way of understanding life and their respect for the sea. 
-     
-     After it's 13th edition in Korea, "Mom is a Haenyeo" is now being translated to Japanese and  Spanish and Catalan by Santi Balmes.</p></div>
+  
   <div id="wrap">
     <header>
       <div class="header-first">
@@ -218,6 +216,30 @@
       <section id="collaborations" class="collaborations">
         <div class="container">
           <h2 class="s3">Collaborations</h2>
+
+          <div class="popup" >
+            <div class="popup-container">
+              <img src="img/img-5795.jpg"><a href="#" class="close">X</a>
+              <h3>Mom is a Haenyeo</h3>
+              <p>A story about the “Hanyeo” diver women that live in Jeju Island, 
+                South Korea. It represents profound values for the artist: independence,
+                 pride for their work and a strong sense of community. After a Japanese invasion, 
+                 the island was left with barely any men, and women developed a diving technique, 
+                 which depended only on their pulmonary capacity. These women have been the biggest
+                  input to the island’s economy, and it is a dying art.  Hanyeos had been up to 
+                  25000 in the past but nowadays there’s only 4000 left, and their average age is 72 years old.
+          
+                This book tells the story of three generations of divers; grandmother, 
+                mother and daughter, through them exposes the Haenyeos way of understanding 
+                life and their respect for the sea. 
+               
+               After it's 13th edition in Korea, "Mom is a Haenyeo" is now being translated 
+               to Japanese and  Spanish and Catalan by Santi Balmes.</p>
+               <button type="button" class="prev">Prev</button>
+               <button type="button" class="next">Next</button>       
+            </div>        
+          </div>
+            
           
           <div class="content-box">
             <div class="title left">
@@ -227,8 +249,8 @@
             <div class="right">
               <a href="#"><div class="gallery-photo" style="background-image: url('img/img-5795.jpg');">
                 </div></a>
+
                 
-            
               
 
               
