@@ -32,7 +32,7 @@ $(function(){
 // work img 호버시
 
 $(function(){
-  $('.work .gallery-photo').hover(
+  $('.work .work-gallery-photo').hover(
     function(){
       $(this).css('transform', 'scale(1.2)');
     },
@@ -143,7 +143,6 @@ $(function(){
     }
   );
 });
-
 
 
 $(function(){

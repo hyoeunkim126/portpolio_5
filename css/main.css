@@ -54,15 +54,12 @@ header .logo img { max-width: 80%; }
 .navi-item { margin-bottom: 20px;}
 
     /* section 공통 */
-.container { width: 1200px; height: auto; padding: 25vh 0vw;
+.container { width: 1200px; height: auto; padding: 15vh 0vw;
             margin: 0 auto;  }
 .container .title { width: 60%; }
 .container .right { width: 40%;}
 .container>h2 { width: 100%;
-                margin-top: 0px;
-                margin-bottom: 0px;
                 font-size: 3em;
-                line-height: 110%;
                 font-weight: 400;
                 letter-spacing: 0.2em; }
 h3 { font-size: 1.8em;
@@ -85,7 +82,7 @@ h4 { font-size: 1.2em;
 .sticky-text { width: 80%; 
             margin-top: 600px;
             position: sticky;
-            top: 10vh;
+            top: 20vh;
             font-size: 3em;
             line-height: 110%;
             letter-spacing: 0.1em;
@@ -101,14 +98,14 @@ h4 { font-size: 1.2em;
     /* work */
 #work { height: auto; background-color: rgb(240, 219, 213); opacity: 0.5;}
 #work .content-box { flex-flow: row wrap; 
-                     justify-content: space-between; padding-top: 25vh;}
+                     justify-content: space-between; padding-top: 10vh;}
 #work .content-box .work-gallery { width: 30%; height: auto; 
     overflow: hidden;}
 .work-gallery .work-img-hover { height: 320px; overflow: hidden; 
     transition: all 0.5s ease-in-out;}                        
-.gallery-photo { width: 100%; height: 350px; 
+.work-gallery-photo { width: 100%; height: 350px; 
     background-size: cover; background-position: top;
-    transition: all 0.5s ease-in-out; }
+    transition: all 0.5s ease-in-out; cursor: pointer;}
 .work-title-box { padding-top: 1vh; 
                   padding-left: 3vh;}
 .work-gallery h4 { font-size: 1.2em; padding-top: 2vh;}
@@ -121,7 +118,7 @@ h4 { font-size: 1.2em;
     }
 #collaborations .container .left { width: 50%;}
 #collaborations .container h2 { 
-    position: sticky; top: 20vh; margin-bottom: 15vh;}
+    position: sticky; top: 10vh; margin-bottom: 10vh;}
 #collaborations .container .left  { display: flex;
                                     align-items: flex-end; }
 .collabo-text { width: 70%; font-size: 1.5em; font-weight: lighter;
@@ -129,11 +126,9 @@ h4 { font-size: 1.2em;
 #collaborations .right { width: 50%; display: flex; flex-flow: row wrap; 
                         justify-content: space-between; grid-row-gap: 7vh;
                         margin-top: -15vh;}
-#collaborations .right a { width: 45%; }
-#collaborations .right .gallery-photo { width: 100%; height: 250px; 
+#collaborations .right .gallery-photo { width: 45%; height: 250px; 
     background-size: cover; background-position: center;
-    opacity: 0.5; 
-    transition: opacity 300ms ease; }
+    opacity: 0.5; transition: opacity 300ms ease; cursor: pointer;}
 #collaborations .right .gallery-photo:hover { opacity: 1;}
 
 
@@ -240,24 +235,30 @@ label { display: block;
 
 /* 모달팝업 */
 .popup { width: 100%; height: 100%; 
-    background-color: rgba(255, 255, 255, 0.5); 
-    top:0; left:0; 
-    position: fixed; display:none; }
+        background-color: rgba(255, 255, 255, 0.5); 
+        top:0; left:0; 
+        position: fixed; display:none; }
 
 .popup-container { position: absolute;
-                   top:5%; left: 50%; 
+                   top:10%; left: 50%; 
                    transform: translateX(-50%);
                     width: 900px; height: auto; 
                     background-color: #fff;
-                    padding: 10px 50px; 
-                    display: flex; flex-direction: column;
-                    justify-content: flex-start;}
-                   
-.popup-container img { margin: 0 auto;
+                    padding: 20px 50px; 
+                    box-shadow: 0 20px 40px -25px rgb(0 0 0 / 25%) ;
+                    }
+.popup-up { display: flex; justify-content: space-between;}                   
+.popup-container img { margin: 20px auto;
                        width:500px; height:auto;}
-.popup-container { font-size: 0.8em; line-height: 1.5em;}
-.popup .close{ padding:10px; 
+.popup-container h3 { margin-top: 10px;}
+.popup-container p { font-size: 0.9em; 
+                     line-height: 1.5em;
+                     color: #666;
+                     margin-bottom: 20px;}
+.popup .close{ padding:20px; right: 0;
                 color:rgb(0, 0, 0); 
-                font-size: 2em;
-                font-family:verdana;}
+                font-size: 3em;
+                font-family:verdana;
+                font-weight: lighter;
+                cursor: pointer;}
 
