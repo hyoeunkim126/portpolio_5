@@ -148,11 +148,12 @@ $(function(){
 
 $(function(){
   $('.gallery-photo').click(function(){
-    $('.popup').css('display', 'block').css('opacity', '1');
+    $('.popup').show();
+    
   });
 
   $('.close').click(function(){
-    $('.popup').css('display', 'none');
+    $('.popup').hide();
   });
 });
 
