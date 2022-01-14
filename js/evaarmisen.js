@@ -144,12 +144,12 @@ $(function(){
   );
 });
 
-
+ // collaborations 모달팝업
 $(function(){
   $('.gallery-photo').click(function(){
-    $('.popup').show();
-    
+    $(this).next('.popup').show();
   });
+
 
   $('.close').click(function(){
     $('.popup').hide();
