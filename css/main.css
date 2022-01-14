@@ -77,17 +77,17 @@ h4 { font-size: 1.2em;
 
     /* about me */
 #aboutme { height: auto; 
-            background-color: rgb(240, 219, 213);
-            opacity: 0.5;}
+            background-color: rgb(240, 219, 213);}
 .sticky-text { width: 80%; 
             margin-top: 600px;
             position: sticky;
-            top: 20vh;
+            top: 15vh;
             font-size: 3em;
             line-height: 110%;
             letter-spacing: 0.1em;
             line-height: 120%;
-            font-weight: 300;}
+            font-weight: 300;
+            color: #046bb6 ;}
 
 .sub-title { font-weight: bold; padding-bottom: 5vh;}
 #aboutme .right div { width: 100%; height: 800px; 
@@ -96,7 +96,7 @@ h4 { font-size: 1.2em;
     margin-top: 100px; }
 
     /* work */
-#work { height: auto; background-color: rgb(240, 219, 213); opacity: 0.5;}
+#work { height: auto; background-color: rgb(240, 219, 213);}
 #work .content-box { flex-flow: row wrap; 
                      justify-content: space-between; padding-top: 10vh;}
 #work .content-box .work-gallery { width: 30%; height: auto; 
@@ -236,26 +236,32 @@ label { display: block;
 /* 모달팝업 */
 .popup { width: 100%; height: 100%; 
         background-color: rgba(255, 255, 255, 0.5); 
-        top:0; left:0; 
+        top:0; left:0; z-index: 999;
         position: fixed; display:none; }
 
 .popup-container { position: absolute;
-                   top:10%; left: 50%; 
+                   top:10%; left: 50%;
                    transform: translateX(-50%);
-                    width: 900px; height: auto; 
+                    width: auto; height: 85%; 
                     background-color: #fff;
                     padding: 20px 50px; 
                     box-shadow: 0 20px 40px -25px rgb(0 0 0 / 25%) ;
                     }
-.popup-up { display: flex; justify-content: space-between;}                   
-.popup-container img { margin: 20px auto;
-                       width:500px; height:auto;}
-.popup-container h3 { margin-top: 10px;}
-.popup-container p { font-size: 0.9em; 
-                     line-height: 1.5em;
-                     color: #666;
-                     margin-bottom: 20px;}
-.popup .close{ padding:20px; right: 0;
+.popup-up { display: flex; 
+            justify-content: space-between;
+            width: 100%;  height: 70%;
+            margin: 0 auto; }                   
+.popup-up img { margin: 10px; }
+.popup-text { margin: 0; }
+.popup-text h3 { display: inline-block; 
+                 margin-top: 5px;}
+.popup-text p { 
+                font-size: 0.9em; 
+                line-height: 1.5em;
+                color: #666;
+                margin-bottom: 20px; 
+                text-align: left; }
+.popup .close{ padding:30px; right: 0;
                 color:rgb(0, 0, 0); 
                 font-size: 3em;
                 font-family:verdana;
