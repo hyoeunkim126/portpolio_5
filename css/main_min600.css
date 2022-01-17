@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media (min-width:699.9px) and (max-width:1250px) {
+@media (min-width:700px) and (max-width:1250px) {
     #wrap { height: auto;}
     header { display: grid;
             min-height: 100vh;
@@ -20,14 +20,16 @@
     header .logo {  padding-right: 3vw;
                     padding-left: 3vw;  }
     header .logo img { max-width: 60%; }
-    .header-second { display: flex; height: 100%; padding-left: 8vw;
-                    justify-content: center; align-items: center; }
-    .circle-box { display: grid;  
-                    grid-column-gap: 30px;
-                    grid-row-gap: 30 px; 
+    .header-second { width: 100%; display: flex; height: 100%; padding-left: 8vw;
+                    justify-content: center; align-items: flex-start; }
+    .circle-box { display: grid; flex-direction: column; 
+                    align-items: center;    
+                    grid-column-gap: 5%;
+                    grid-row-gap: 5%; 
+                    grid-template-rows: 1fr 1fr 1fr;
                     grid-template-columns: 1fr 1fr 1fr;}
     .animation-item {border-radius: 50%; 
-                    width: 140px; height: 140px;
+                    width: 8rem; height: 8rem;
                     overflow: hidden; 
                     transition: all 0.5s ease-in-out;}
     .animation-image { max-width: 140%; 
@@ -40,7 +42,7 @@
                 line-height: 140%;  }
     .navi-item a:after{content:"";
                         display:block;
-                        width:70%;
+                        width:90%;
                         height:1px;
                         background:#046bb6;
                         transform:scaleX(0);
@@ -50,7 +52,7 @@
                             transform-origin:left; } 
     .navi-item a:hover { color: #046bb6; }      
     .navi-item-box {display: flex; flex-direction: column;
-                    padding: 30%; }
+                    padding: 10% 30%; }
     .navi-item { margin-bottom: 20px;}
 
         /* section 공통 */
@@ -66,7 +68,7 @@
     h3 { font-size: 1.3em;
         line-height: 150%;
         font-weight: lighter;
-        margin-top: 50px;
+        margin-top: 2%;
         text-align: justify; }
 
     h4 { font-size: 1em;
@@ -74,33 +76,33 @@
         font-weight: lighter;
         text-align: justify; }
 
-    .content-box { display: flex; }
 
         /* about me */
     #aboutme { height: auto; 
                 background-color: rgb(240, 219, 213);}
+    .about-me .content-box { display: flex; flex-direction: row;}
     .sticky-text { width: 80%; 
                 margin-top: 600px;
                 position: sticky;
-                top: 15vh;
+                top: 20vh;
                 font-size: 1.8em;
                 line-height: 110%;
                 letter-spacing: 0.1em;
                 line-height: 120%;
                 font-weight: 300;
                 color: #046bb6 ;}
-
+    .biografia { width: 90%; margin-top: 10px;}
     .sub-title { font-weight: bold; padding-bottom: 5vh;}
-    #aboutme .right div { width: 100%; height: 600px; 
+    .about-me .right div { width: 100%; height: 500px; 
                 background-size: cover;
-                background-position:center;
-                margin-top: 40px; }
+                background-position:top;
+                margin-bottom: 40px; }
 
         /* work */
     #work { height: auto; background-color: rgb(240, 219, 213);}
-    #work .content-box { flex-flow: row wrap; 
-                        justify-content: space-between; padding-top: 10vh;}
-    #work .content-box .work-gallery { width: 45%; height: auto; 
+    .work .content-box { display: flex; flex-flow: row wrap; 
+                        justify-content: space-around; padding-top: 10vh;}
+    .work-gallery { width: 45%; height: auto; 
         overflow: hidden;}
     .work-gallery .work-img-hover { height: 320px; overflow: hidden; 
         transition: all 0.5s ease-in-out;}                        
@@ -117,20 +119,21 @@
         /* collaborations */
     #collaborations { height: auto; background-color: rgb(240, 219, 213);
         }
-    #collaborations .container .left { width: 50%;}
-    #collaborations .container h2 { 
+    .collaborations .content-box {display: flex; }
+    .collaborations .container .left { width: 50%;}
+    .collaborations .container h2 { 
         position: sticky; top: 20vh; margin-bottom: 20vh;}
-    #collaborations .container .left  { display: flex;
+    .collaborations .container .left  { display: flex;
                                         align-items: flex-end; }
     .collabo-text { width: 70%; font-size: 1.5em; font-weight: lighter;
                     line-height: 140%; padding-top: 5vh;}
-    #collaborations .right { width: 50%; display: flex; flex-flow: row wrap; 
+    .collaborations .right { width: 50%; display: flex; flex-flow: row wrap; 
                             justify-content: space-between; grid-row-gap: 7vh;
                             margin-top: -15vh;}
-    #collaborations .right .gallery-photo { width: 45%; height: 250px; 
+    .collaborations .right .gallery-photo { width: 45%; height: 250px; 
         background-size: cover; background-position: center;
         opacity: 0.5; transition: opacity 300ms ease; cursor: pointer;}
-    #collaborations .right .gallery-photo:hover { opacity: 1;}
+    .collaborations .right .gallery-photo:hover { opacity: 1;}
 
     /* 모달팝업 */
     .popup { width: 100%; height: 100%; 
@@ -170,9 +173,10 @@
 
         /* news */
     #news { height: auto; background-color: rgb(240, 219, 213);}
-    #news .container h2 { position: sticky; top:20vh; }
-    #news .container .left { width: 30%; height: 500px;}
-    #news .container .right { width: 70%; height: 100%; }
+    .news .content-box {display: flex; }
+    .news .container h2 { position: sticky; top:20vh; }
+    .news .container .left { width: 30%; height: 500px;}
+    .news .container .right { width: 70%; height: 100%; }
     .news-box { margin-bottom: 8vh;
                 border: 1px solid rgb(221, 198, 191);}
     .news-box .news-photo { width: 100%; background-color: gold;
