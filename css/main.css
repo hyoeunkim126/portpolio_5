@@ -118,7 +118,7 @@ h4 { font-size: 1.2em;
     }
 #collaborations .container .left { width: 50%;}
 #collaborations .container h2 { 
-    position: sticky; top: 10vh; margin-bottom: 10vh;}
+    position: sticky; top: 20vh; margin-bottom: 15vh;}
 #collaborations .container .left  { display: flex;
                                     align-items: flex-end; }
 .collabo-text { width: 70%; font-size: 1.5em; font-weight: lighter;
@@ -130,6 +130,41 @@ h4 { font-size: 1.2em;
     background-size: cover; background-position: center;
     opacity: 0.5; transition: opacity 300ms ease; cursor: pointer;}
 #collaborations .right .gallery-photo:hover { opacity: 1;}
+
+/* 모달팝업 */
+.popup { width: 100%; height: 100%; 
+    background-color: rgba(255, 255, 255, 0.5); 
+    top:0; left:0; z-index: 999;
+    position: fixed; display:none; }
+
+.popup-container { position: absolute;
+               top:10%; left: 50%;
+               transform: translateX(-50%);
+                width: auto; height: 85%; 
+                background-color: #fff;
+                padding: 20px 50px; 
+                box-shadow: 0 20px 40px -25px rgb(0 0 0 / 25%) ;
+                }
+.popup-up { display: flex; 
+        justify-content: space-between;
+        width: 100%;  height: 70%;
+        margin: 0 auto; }                   
+.popup-up img { margin: 10px; }
+.popup-text { margin: 0; }
+.popup-text h3 { display: inline-block; 
+             margin-top: 5px;}
+.popup-text p { 
+            font-size: 0.9em; 
+            line-height: 1.5em;
+            color: #666;
+            margin-bottom: 20px; 
+            text-align: left; }
+.popup .close{ padding:30px; right: 0;
+            color:rgb(0, 0, 0); 
+            font-size: 3em;
+            font-family:verdana;
+            font-weight: lighter;
+            cursor: pointer;}
 
 
     /* news */
@@ -143,13 +178,14 @@ h4 { font-size: 1.2em;
                         height: 400px; 
                         background-size: cover; 
                         background-position: top;}
-.news-box a { width: 100%; height: 200px; color: #333;}
 .news-text-box { padding: 30px; 
                 display: flex; justify-content: space-between;}
+.news-text-box div { width: 40%;}
 .news-text-box h4 {  font-size: 1em; color: rgb(201, 152, 138);}
 .news-text-box p { font-size: 0.8em; width: 50%;
                     line-height: 130%;
-                    font-weight: lighter;}
+                    font-weight: lighter;
+                    margin-top: 5px;}
 
     /* shop */
 #shop { height: auto; background-color: rgb(240, 219, 213);}
@@ -232,38 +268,9 @@ label { display: block;
         cursor: pointer;
         }                   
 
-/* 모달팝업 */
-.popup { width: 100%; height: 100%; 
-        background-color: rgba(255, 255, 255, 0.5); 
-        top:0; left:0; z-index: 999;
-        position: fixed; display:none; }
-
-.popup-container { position: absolute;
-                   top:10%; left: 50%;
-                   transform: translateX(-50%);
-                    width: auto; height: 85%; 
-                    background-color: #fff;
-                    padding: 20px 50px; 
-                    box-shadow: 0 20px 40px -25px rgb(0 0 0 / 25%) ;
-                    }
-.popup-up { display: flex; 
-            justify-content: space-between;
-            width: 100%;  height: 70%;
-            margin: 0 auto; }                   
-.popup-up img { margin: 10px; }
-.popup-text { margin: 0; }
-.popup-text h3 { display: inline-block; 
-                 margin-top: 5px;}
-.popup-text p { 
-                font-size: 0.9em; 
-                line-height: 1.5em;
-                color: #666;
-                margin-bottom: 20px; 
-                text-align: left; }
-.popup .close{ padding:30px; right: 0;
-                color:rgb(0, 0, 0); 
-                font-size: 3em;
-                font-family:verdana;
-                font-weight: lighter;
-                cursor: pointer;}
-
+.contact-link { display: flex;
+                justify-content: space-around;
+                margin: 10vh 0;}
+.contact-link h3 { font-size: 2.5em;
+                color: rgb(194, 144, 129); }
+.contact-link a { color: #666;}
