@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media (min-width:699.9px) and (max-width:1250px) {
+@media (max-width:699px)  {
     #wrap { height: auto;}
     header { display: grid;
             min-height: 100vh;
@@ -8,7 +8,7 @@
             grid-auto-flow: column;
             grid-row-gap: 0px;
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: 25% auto;
+            grid-template-rows: 10% auto;
             align-items: start;
             background-color: rgb(250, 247, 240);
             opacity: 1;}
@@ -20,14 +20,11 @@
     header .logo {  padding-right: 3vw;
                     padding-left: 3vw;  }
     header .logo img { max-width: 60%; }
-    .header-second { display: flex; height: 100%; padding-left: 8vw;
-                    justify-content: center; align-items: center; }
-    .circle-box { display: grid;  
-                    grid-column-gap: 30px;
-                    grid-row-gap: 30 px; 
-                    grid-template-columns: 1fr 1fr 1fr;}
+    .header-second { height: 100%; padding-left: 8vw; }
+    .circle-box { display: grid;   
+                    grid-column-gap: 25px;
+                    grid-row-gap: 25px; }
     .animation-item {border-radius: 50%; 
-                    width: 140px; height: 140px;
                     overflow: hidden; 
                     transition: all 0.5s ease-in-out;}
     .animation-image { max-width: 140%; 
@@ -54,22 +51,22 @@
     .navi-item { margin-bottom: 20px;}
 
         /* section 공통 */
-    .container { width: 100%; height: auto; padding: 15vh 5vw;
+    .container { width: 100%; height: auto; padding: 15vh 3vw;
                 margin: 0 auto;  }
     .container .title { width: 60%; }
     .container .right { width: 40%;}
     .container>h2 { width: 100%;
-                    font-size: 2.5em;
+                    font-size: 2em;
                     font-weight: 400;
                     letter-spacing: 0.2em;
                      }
-    h3 { font-size: 1.3em;
+    h3 { font-size: 1em;
         line-height: 150%;
         font-weight: lighter;
-        margin-top: 50px;
+        margin-top: 10px;
         text-align: justify; }
 
-    h4 { font-size: 1em;
+    h4 { font-size: 0.8em;
         line-height: 160%;
         font-weight: lighter;
         text-align: justify; }
@@ -83,7 +80,7 @@
                 margin-top: 600px;
                 position: sticky;
                 top: 15vh;
-                font-size: 1.8em;
+                font-size: 1.3em;
                 line-height: 110%;
                 letter-spacing: 0.1em;
                 line-height: 120%;
@@ -91,7 +88,7 @@
                 color: #046bb6 ;}
 
     .sub-title { font-weight: bold; padding-bottom: 5vh;}
-    #aboutme .right div { width: 100%; height: 600px; 
+    #aboutme .right div { width: 100%; height: 350px; 
                 background-size: cover;
                 background-position:center;
                 margin-top: 40px; }
@@ -99,8 +96,8 @@
         /* work */
     #work { height: auto; background-color: rgb(240, 219, 213);}
     #work .content-box { flex-flow: row wrap; 
-                        justify-content: space-between; padding-top: 10vh;}
-    #work .content-box .work-gallery { width: 45%; height: auto; 
+                        justify-content: center; padding-top: 10vh;}
+    #work .content-box .work-gallery { width: 90%; height: auto; 
         overflow: hidden;}
     .work-gallery .work-img-hover { height: 320px; overflow: hidden; 
         transition: all 0.5s ease-in-out;}                        
@@ -118,8 +115,7 @@
     #collaborations { height: auto; background-color: rgb(240, 219, 213);
         }
     #collaborations .container .left { width: 50%;}
-    #collaborations .container h2 { 
-        position: sticky; top: 20vh; margin-bottom: 20vh;}
+    #collaborations .container h2 { margin-bottom: 20vh;}
     #collaborations .container .left  { display: flex;
                                         align-items: flex-end; }
     .collabo-text { width: 70%; font-size: 1.5em; font-weight: lighter;
