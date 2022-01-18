@@ -41,7 +41,7 @@
                 line-height: 140%;  }
     .navi-item a:after{content:"";
                         display:block;
-                        width:70%;
+                        width:80%;
                         height:1px;
                         background:#046bb6;
                         transform:scaleX(0);

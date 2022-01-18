@@ -29,7 +29,7 @@
                     grid-template-rows: 1fr 1fr 1fr;
                     grid-template-columns: 1fr 1fr 1fr;}
     .animation-item {border-radius: 50%; 
-                    width: 8rem; height: 8rem;
+                    width: 7rem; height: 7rem;
                     overflow: hidden; 
                     transition: all 0.5s ease-in-out;}
     .animation-image { max-width: 140%; 
