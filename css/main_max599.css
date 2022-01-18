@@ -19,7 +19,7 @@
                     grid-row-gap: 5%; 
                     grid-template-rows: 1fr 1fr 1fr;
                     grid-template-columns: 1fr 1fr 1fr;
-                    padding-right: 10vh;}
+                    padding-right: 12vh;}
 
     .animation-item {border-radius: 50%; 
                     overflow: hidden; 
