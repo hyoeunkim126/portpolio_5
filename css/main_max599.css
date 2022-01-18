@@ -18,11 +18,12 @@
                     grid-column-gap: 5%;
                     grid-row-gap: 5%; 
                     grid-template-rows: 1fr 1fr 1fr;
-                    grid-template-columns: 1fr 1fr 1fr;}
+                    grid-template-columns: 1fr 1fr 1fr;
+                    padding-right: 10vh;}
 
     .animation-item {border-radius: 50%; 
                     overflow: hidden; 
-                    width: 6rem; height: 6rem;;
+                    width: 7rem; height: 7rem;;
                     transition: all 0.5s ease-in-out;}
     .animation-image { max-width: 180%; 
                     transition: all 0.5s ease-in-out; }
@@ -34,7 +35,7 @@
                 line-height: 140%;  }
     .navi-item a:after{content:"";
                         display:block;
-                        width:80%;
+                        width:55%;
                         height:1px;
                         background:#046bb6;
                         transform:scaleX(0);
@@ -48,7 +49,7 @@
     .navi-item { margin-bottom: 20px;}
 
         /* section 공통 */
-    .container { width: 100%; heigh: auto; padding: 10vh 8vw;
+    .container { width: 100%; height: auto; padding: 10vh 8vw;
                 margin: 0 auto;  }
     .container .title { width: 100%; }
     .container .right { width: 100%;}
