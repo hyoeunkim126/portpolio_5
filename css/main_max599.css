@@ -2,14 +2,8 @@
 
 @media (max-width:699px)  {
     #wrap { height: auto;}
-    header { display: grid;
+    header {
             min-height: 100vh;
-            padding: 0vh 0vw;
-            grid-auto-flow: column;
-            grid-row-gap: 0px;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 25% auto;
-            align-items: start;
             background-color: rgb(250, 247, 240);
             opacity: 1;}
     .header-first { padding-top: 7vh; 
@@ -17,10 +11,9 @@
                     grid-row-end: span 1;
                     grid-column-start: span 2;
                     grid-column-end: span 2; }
-    header .logo {  padding-right: 3vw;
-                    padding-left: 3vw;  }
+    header .logo {  padding-left: 15vw; }
     header .logo img { max-width: 60%; vertical-align: middle; }
-    .header-second { height: 100%; padding: 5vw 0 0 8vw; }
+    .header-second { height: 100%; padding: 12vw; }
     .circle-box { display: grid;   
                     grid-column-gap: 5%;
                     grid-row-gap: 5%; 
@@ -29,7 +22,7 @@
 
     .animation-item {border-radius: 50%; 
                     overflow: hidden; 
-                    width: 5rem; height: 5rem;;
+                    width: 6rem; height: 6rem;;
                     transition: all 0.5s ease-in-out;}
     .animation-image { max-width: 180%; 
                     transition: all 0.5s ease-in-out; }
@@ -37,7 +30,7 @@
         /* 네비게이션 */
     #navi { display: flex; flex-direction: column; 
             justify-content: center; }
-    .navi-item a { color: #111; font-size: 1.2em;
+    .navi-item a { color: #111; font-size: 1.5em;
                 line-height: 140%;  }
     .navi-item a:after{content:"";
                         display:block;
@@ -55,14 +48,14 @@
     .navi-item { margin-bottom: 20px;}
 
         /* section 공통 */
-    .container { width: 100%; height: auto; padding: 10vh 8vw;
+    .container { width: 100%; heigh: auto; padding: 10vh 8vw;
                 margin: 0 auto;  }
-    .container .title { width: 60%; }
-    .container .right { width: 40%;}
+    .container .title { width: 100%; }
+    .container .right { width: 100%;}
     .container>h2 { width: 100%;
                     font-size: 2em;
                     font-weight: 400;
-                    letter-spacing: 0.2em;
+                    letter-spacing: 0.1em;
                      }
     h3 { font-size: 1em;
         line-height: 150%;
@@ -79,29 +72,27 @@
         /* about me */
     #aboutme { height: auto; 
                 background-color: rgb(240, 219, 213);}
-    .about-me .content-box { display: flex; }
+    .about-me .content-box { display: flex; flex-direction: column;}
 
-    .sticky-text { width: 80%; 
-                margin-top: 500px;
-                position: sticky;
-                top: 15vh;
+    .sticky-text { width: 100%; 
+                margin-top: 5vh;
                 font-size: 1.5em;
                 line-height: 110%;
                 letter-spacing: 0.1em;
                 line-height: 120%;
                 font-weight: 300;
                 color: #046bb6 ;}
-    .biografia { width: 90%; margin-top: 10px;}
-    .sub-title { font-weight: bold; padding-bottom: 5vh;}
-    .about-me .right div { width: 100%; height: 350px; 
+    .biografia { width: 50%; margin-top: 5vh;}
+    .sub-title { font-size: 1.4em; font-weight: bold; padding-bottom: 5vh;}
+    .about-me .right div { width: 100%; height: 380px; 
                 background-size: cover;
-                background-position:center;
+                background-position:top;
                 margin-top: 20px; }
 
         /* work */
     #work { height: auto; background-color: rgb(240, 219, 213);}
     .work .content-box { flex-flow: row wrap; 
-                        justify-content: center; padding-top: 10vh;}
+                        justify-content: center; padding-top: 5vh;}
     .work .content-box .work-gallery { width: 100%; height: auto; 
         overflow: hidden; margin: 0 auto;}
     .work-gallery .work-img-hover { height: 320px; overflow: hidden; 
@@ -113,7 +104,7 @@
                     padding-left: 3vh;}
     .work-gallery h4 { font-size: 1.2em; padding-top: 2vh;}
     .work-gallery span { display: block; color: rgb(122, 122, 122);} 
-    .work-gallery span:last-child { margin-bottom: 5vh;} 
+    /* .work-gallery span:last-child { margin-bottom: 5vh;}  */
 
 
         /* collaborations */
@@ -121,7 +112,7 @@
         }
     .collaborations .container h2 { margin-bottom: 5vh;}
     .collaborations .container .left  { display: flex; 
-                                        align-items: flex-end; width: 90%; }
+                                        align-items: flex-end; }
     .collabo-text { width: 100%; font-size: 1.3em; font-weight: lighter;
                     line-height: 140%; padding-bottom: 3vh;}
     .collaborations .right { width: 95%; display: flex; flex-flow: row wrap; 
@@ -170,10 +161,10 @@
 
         /* news */
     #news { height: auto; background-color: rgb(240, 219, 213);}
-    .news .container .right { width: 100%; height: 100%; margin: 0 auto; }
+    .news .container .right { width: 100%; height: 100%;  }
     .news .content-box {display: flex; flex-direction: column; 
                         margin-top: 5vh;}
-    .news-box { margin-bottom: 8vh;
+    .news-box { margin-bottom: 5vh;
                 border: 1px solid rgb(221, 198, 191);}
     .news-box .news-photo { width: 100%; background-color: gold;
                             height: 400px; 
@@ -213,7 +204,7 @@
 
         /* contact */
     #contact { height: auto; background-color: rgb(240, 219, 213);}
-    .contact h2 { margin-bottom: 10vh; }
+    .contact h2 { margin-bottom: 5vh; }
     .contact .contact-box { max-width: 100%; height: auto; 
                             margin: 0 auto; padding: 8vh 6vw;
                             border-radius: 2px;
@@ -270,7 +261,7 @@
 
     .contact-link { display: flex; flex-direction: column;
                     justify-content: space-around;
-                    margin: 10vh 0;}
+                    margin-top: 2vh;}
     .contact-link h3 { font-size: 2.5em;
                     color: rgb(194, 144, 129); }
     .contact-link a { color: #666;}
