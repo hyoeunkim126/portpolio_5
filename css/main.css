@@ -1,8 +1,6 @@
 @charset "UTF-8";
-
-@media (min-width:1200px) {
-
     .nav ul{display: flex;}
+    .submenu{display: none;}
     #main-box-wrap { width: 100%;  display: flex; margin-bottom: 10vh;}
     #main-box-wrap>div { width: 26%;}
     .main-box:first-child {
@@ -27,5 +25,6 @@
         
     .floor_info .f_top p { color:#fff; line-height: 32px;
     font-size: 1.7rem;}
-
-    }
+    .circle-box{width: 80%; height: 30vh; margin: 0 auto;}
+    .circle { width: 20%; height: 15vw; background-color: #fff; border-radius: 50%;}
+  
